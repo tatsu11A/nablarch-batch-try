@@ -1,6 +1,8 @@
+com\example\nablarch\batch\ImportUsersAction.class
 com\example\nablarch\batch\domain\SampleDomainBean.class
 com\example\nablarch\batch\SampleBatch.class
-com\example\nablarch\batch\package-info.class
 com\example\nablarch\batch\SampleResiBatch.class
 com\example\nablarch\batch\domain\SampleDomainManager.class
 com\example\nablarch\batch\domain\package-info.class
+com\example\nablarch\batch\HelloAction.class
+com\example\nablarch\batch\package-info.class

@@ -84,3 +84,495 @@ Thread Result:[200 Success] The request has succeeded.
 2025-09-14 19:57:15.894 -INFO- com.example.nablarch.batch.SampleResiBatch [202509141957158940002] boot_proc = [] proc_sys = [batch] req_id = [SampleResiBatch] usr_id = [dev] LOGIN_ID:tarou
 2025-09-14 19:57:15.894 -INFO- com.example.nablarch.batch.SampleResiBatch [202509141957158940002] boot_proc = [] proc_sys = [batch] req_id = [SampleResiBatch] usr_id = [dev] KANA_NAME:たろう
 2025-09-14 19:57:15.894 -INFO- com.example.nablarch.batch.SampleResiBatch [202509141957158940002] boot_proc = [] proc_sys = [batch] req_id = [SampleResiBatch] usr_id = [dev] KANJI_NAME:太郎
+2025-09-15 12:19:16.142 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	WRITER NAME         = [writer.appFile]
+	WRITER CLASS        = [nablarch.core.log.basic.FileLogWriter]
+	FORMATTER CLASS     = [nablarch.core.log.basic.BasicLogFormatter]
+	LEVEL               = [null]
+	FILE PATH           = [./app.log]
+	ENCODING            = [UTF-8]
+	OUTPUT BUFFER SIZE  = [8000]
+	ROTATE POLICY CLASS = [nablarch.core.log.basic.FileSizeRotatePolicy]
+	FILE AUTO CHANGE    = [true]
+	MAX FILE SIZE       = [10000000]
+	CURRENT FILE SIZE   = [8801]
+2025-09-15 12:19:16.142 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	LOGGER = [DEV] NAME REGEX = [DEV] LEVEL = [INFO]
+	LOGGER = [PER] NAME REGEX = [PERFORMANCE] LEVEL = [INFO]
+	LOGGER = [SQL] NAME REGEX = [SQL] LEVEL = [INFO]
+	LOGGER = [ROO] NAME REGEX = [.*] LEVEL = [INFO]
+2025-09-15 12:19:16.170 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ BEGIN @@@@
+	command line options = {
+		userId = [dev]
+		requestPath = [HelloAction]
+		diConfig = [classpath:hello-boot.xml]
+	}
+	command line arguments = {
+	}
+2025-09-15 12:19:16.331 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = tableName
+2025-09-15 12:19:16.334 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = segmentColumnName
+2025-09-15 12:19:16.334 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = dateColumnName
+2025-09-15 12:19:16.334 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = defaultSegment
+2025-09-15 12:19:16.334 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = dbTransactionManager
+2025-09-15 12:19:16.388 -INFO- com.zaxxer.hikari.HikariDataSource [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] HikariPool-1 - Starting...
+2025-09-15 12:19:16.659 -INFO- com.zaxxer.hikari.HikariDataSource [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] HikariPool-1 - Start completed.
+2025-09-15 12:19:16.694 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ APPLICATION SETTINGS @@@@
+	system settings = {
+	}
+	business date = [20140123]
+2025-09-15 12:19:16.707 -INFO- com.example.nablarch.batch.HelloAction [202509151219167070002] boot_proc = [] proc_sys = [batch] req_id = [HelloAction] usr_id = [dev] [HelloAction] バッチ開始
+2025-09-15 12:19:16.707 -INFO- com.example.nablarch.batch.HelloAction [202509151219167070002] boot_proc = [] proc_sys = [batch] req_id = [HelloAction] usr_id = [dev] [HelloAction] バッチ終了
+2025-09-15 12:19:16.707 -INFO- nablarch.fw.handler.MultiThreadExecutionHandler [202509151219166940001] boot_proc = [] proc_sys = [batch] req_id = [HelloAction] usr_id = [dev] 
+Thread Status: normal end.
+Thread Result:[200 Success] The request has succeeded.
+2025-09-15 12:19:16.707 -INFO- nablarch.core.log.app.BasicCommitLogger [202509151219166940001] boot_proc = [] proc_sys = [batch] req_id = [HelloAction] usr_id = [dev] TOTAL COMMIT COUNT = [1]
+2025-09-15 12:19:16.707 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ END @@@@ exit code = [0] execute time(ms) = [533]
+2025-09-15 18:21:31.513 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	WRITER NAME         = [writer.appFile]
+	WRITER CLASS        = [nablarch.core.log.basic.FileLogWriter]
+	FORMATTER CLASS     = [nablarch.core.log.basic.BasicLogFormatter]
+	LEVEL               = [null]
+	FILE PATH           = [./app.log]
+	ENCODING            = [UTF-8]
+	OUTPUT BUFFER SIZE  = [8000]
+	ROTATE POLICY CLASS = [nablarch.core.log.basic.FileSizeRotatePolicy]
+	FILE AUTO CHANGE    = [true]
+	MAX FILE SIZE       = [10000000]
+	CURRENT FILE SIZE   = [12986]
+2025-09-15 18:21:31.513 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	LOGGER = [DEV] NAME REGEX = [DEV] LEVEL = [INFO]
+	LOGGER = [PER] NAME REGEX = [PERFORMANCE] LEVEL = [INFO]
+	LOGGER = [SQL] NAME REGEX = [SQL] LEVEL = [INFO]
+	LOGGER = [ROO] NAME REGEX = [.*] LEVEL = [INFO]
+2025-09-15 18:21:31.540 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ BEGIN @@@@
+	command line options = {
+		userId = [dev]
+		requestPath = [ImportUsersAction]
+		diConfig = [classpath:import-users-boot.xml]
+	}
+	command line arguments = {
+	}
+2025-09-15 18:21:31.577 -FATAL- nablarch.core.log.app.FailureLogUtil [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] fail_code = [MSG99999] an unexpected exception occurred.
+Input Data :
+null
+Stack Trace Information : 
+java.lang.IllegalArgumentException: resource open failed. url = [classpath:import-users-boot.xml].
+	at nablarch.core.util.FileUtil.getResource(FileUtil.java:88)
+	at nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader.load(XmlComponentDefinitionLoader.java:156)
+	at nablarch.core.repository.di.DiContainer.reload(DiContainer.java:177)
+	at nablarch.core.repository.di.DiContainer.<init>(DiContainer.java:103)
+	at nablarch.core.repository.di.DiContainer.<init>(DiContainer.java:90)
+	at nablarch.fw.launcher.Main.setUpSystemRepository(Main.java:236)
+	at nablarch.fw.launcher.Main.setupExecutionContext(Main.java:215)
+	at nablarch.fw.launcher.Main.handle(Main.java:131)
+	at nablarch.fw.launcher.Main.execute(Main.java:187)
+	at nablarch.fw.launcher.Main.main(Main.java:112)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:371)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:360)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:280)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.net.URL.openStream()" because "resourceURL" is null
+	at nablarch.core.util.FileUtil.getResource(FileUtil.java:86)
+	... 13 more
+2025-09-15 18:21:31.595 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ END @@@@ exit code = [127] execute time(ms) = [53]
+2025-09-15 18:33:12.966 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	WRITER NAME         = [writer.appFile]
+	WRITER CLASS        = [nablarch.core.log.basic.FileLogWriter]
+	FORMATTER CLASS     = [nablarch.core.log.basic.BasicLogFormatter]
+	LEVEL               = [null]
+	FILE PATH           = [./app.log]
+	ENCODING            = [UTF-8]
+	OUTPUT BUFFER SIZE  = [8000]
+	ROTATE POLICY CLASS = [nablarch.core.log.basic.FileSizeRotatePolicy]
+	FILE AUTO CHANGE    = [true]
+	MAX FILE SIZE       = [10000000]
+	CURRENT FILE SIZE   = [15926]
+2025-09-15 18:33:12.971 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	LOGGER = [DEV] NAME REGEX = [DEV] LEVEL = [INFO]
+	LOGGER = [PER] NAME REGEX = [PERFORMANCE] LEVEL = [INFO]
+	LOGGER = [SQL] NAME REGEX = [SQL] LEVEL = [INFO]
+	LOGGER = [ROO] NAME REGEX = [.*] LEVEL = [INFO]
+2025-09-15 18:33:12.978 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ BEGIN @@@@
+	command line options = {
+		userId = [dev]
+		requestPath = [ImportUsersAction]
+		diConfig = [classpath:import-users-boot.xml]
+	}
+	command line arguments = {
+	}
+2025-09-15 18:33:13.240 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = tableName
+2025-09-15 18:33:13.240 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = segmentColumnName
+2025-09-15 18:33:13.240 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = dateColumnName
+2025-09-15 18:33:13.240 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = defaultSegment
+2025-09-15 18:33:13.245 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = dbTransactionManager
+2025-09-15 18:33:13.326 -INFO- com.zaxxer.hikari.HikariDataSource [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] HikariPool-1 - Starting...
+2025-09-15 18:33:13.801 -INFO- com.zaxxer.hikari.HikariDataSource [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] HikariPool-1 - Start completed.
+2025-09-15 18:33:13.881 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ APPLICATION SETTINGS @@@@
+	system settings = {
+	}
+	business date = [20140123]
+2025-09-15 18:33:13.893 -INFO- com.example.nablarch.batch.ImportUsersAction [202509151833138930002] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] [ImportUsersAction] start
+2025-09-15 18:33:13.901 -WARN- nablarch.fw.handler.DataReadHandler [202509151833138930002] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] application was abnormal end.
+	input data = java.lang.Object@f7793a8
+Stack Trace Information : 
+java.lang.RuntimeException: CSV read failed: C:\nablarch\nablarch-batch-try\work\input\users.csv
+	at com.example.nablarch.batch.ImportUsersAction.handle(ImportUsersAction.java:74)
+	at nablarch.fw.action.NoInputDataBatchAction.handle(NoInputDataBatchAction.java:42)
+	at nablarch.fw.action.NoInputDataBatchAction.handle(NoInputDataBatchAction.java:26)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.DataReadHandler.handle(DataReadHandler.java:59)
+	at nablarch.fw.handler.DataReadHandler.handle(DataReadHandler.java:26)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.LoopHandler$TransactionExecutorImpl.doInTransaction(LoopHandler.java:296)
+	at nablarch.fw.handler.LoopHandler$TransactionExecutorImpl.doInTransaction(LoopHandler.java:245)
+	at nablarch.core.transaction.TransactionExecutor.execute(TransactionExecutor.java:46)
+	at nablarch.fw.handler.LoopHandler.handle(LoopHandler.java:68)
+	at nablarch.fw.handler.LoopHandler.handle(LoopHandler.java:38)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.common.handler.DbConnectionManagementHandler.handle(DbConnectionManagementHandler.java:86)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.MultiThreadExecutionHandler$1.call(MultiThreadExecutionHandler.java:334)
+	at nablarch.fw.handler.MultiThreadExecutionHandler$1.call(MultiThreadExecutionHandler.java:330)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.nio.charset.MalformedInputException: Input length = 1
+	at java.base/java.nio.charset.CoderResult.throwException(CoderResult.java:279)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:384)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:215)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:169)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at com.example.nablarch.batch.ImportUsersAction.handle(ImportUsersAction.java:49)
+	... 22 more
+2025-09-15 18:33:13.911 -WARN- nablarch.core.log.app.FailureLogUtil [202509151833138810001] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] fail_code = [MSG99999] an unexpected exception occurred.
+Input Data :
+java.lang.Object@f7793a8
+Stack Trace Information : 
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: CSV read failed: C:\nablarch\nablarch-batch-try\work\input\users.csv
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at nablarch.fw.handler.MultiThreadExecutionHandler.reportThreadStatus(MultiThreadExecutionHandler.java:282)
+	at nablarch.fw.handler.MultiThreadExecutionHandler.terminate(MultiThreadExecutionHandler.java:262)
+	at nablarch.fw.handler.MultiThreadExecutionHandler.handle(MultiThreadExecutionHandler.java:128)
+	at nablarch.fw.handler.MultiThreadExecutionHandler.handle(MultiThreadExecutionHandler.java:41)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.DispatchHandler.handle(DispatchHandler.java:98)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.common.handler.TransactionManagementHandler$1.doInTransaction(TransactionManagementHandler.java:149)
+	at nablarch.core.transaction.TransactionExecutor.execute(TransactionExecutor.java:46)
+	at nablarch.common.handler.TransactionManagementHandler.handle(TransactionManagementHandler.java:174)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.common.handler.DbConnectionManagementHandler.handle(DbConnectionManagementHandler.java:86)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.common.handler.threadcontext.ThreadContextHandler.handle(ThreadContextHandler.java:80)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.GlobalErrorHandler.handle(GlobalErrorHandler.java:42)
+	at nablarch.fw.handler.GlobalErrorHandler.handle(GlobalErrorHandler.java:32)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.common.handler.threadcontext.ThreadContextClearHandler.handle(ThreadContextClearHandler.java:25)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.StatusCodeConvertHandler.handle(StatusCodeConvertHandler.java:83)
+	at nablarch.fw.handler.StatusCodeConvertHandler.handle(StatusCodeConvertHandler.java:73)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.launcher.Main.handle(Main.java:135)
+	at nablarch.fw.launcher.Main.execute(Main.java:187)
+	at nablarch.fw.launcher.Main.main(Main.java:112)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:371)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:360)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:280)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.RuntimeException: CSV read failed: C:\nablarch\nablarch-batch-try\work\input\users.csv
+	at com.example.nablarch.batch.ImportUsersAction.handle(ImportUsersAction.java:74)
+	at nablarch.fw.action.NoInputDataBatchAction.handle(NoInputDataBatchAction.java:42)
+	at nablarch.fw.action.NoInputDataBatchAction.handle(NoInputDataBatchAction.java:26)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.DataReadHandler.handle(DataReadHandler.java:59)
+	at nablarch.fw.handler.DataReadHandler.handle(DataReadHandler.java:26)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.LoopHandler$TransactionExecutorImpl.doInTransaction(LoopHandler.java:296)
+	at nablarch.fw.handler.LoopHandler$TransactionExecutorImpl.doInTransaction(LoopHandler.java:245)
+	at nablarch.core.transaction.TransactionExecutor.execute(TransactionExecutor.java:46)
+	at nablarch.fw.handler.LoopHandler.handle(LoopHandler.java:68)
+	at nablarch.fw.handler.LoopHandler.handle(LoopHandler.java:38)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.common.handler.DbConnectionManagementHandler.handle(DbConnectionManagementHandler.java:86)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.MultiThreadExecutionHandler$1.call(MultiThreadExecutionHandler.java:334)
+	at nablarch.fw.handler.MultiThreadExecutionHandler$1.call(MultiThreadExecutionHandler.java:330)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	... 1 more
+Caused by: java.nio.charset.MalformedInputException: Input length = 1
+	at java.base/java.nio.charset.CoderResult.throwException(CoderResult.java:279)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:384)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:215)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:169)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at com.example.nablarch.batch.ImportUsersAction.handle(ImportUsersAction.java:49)
+	... 22 more
+2025-09-15 18:33:13.919 -INFO- nablarch.fw.handler.MultiThreadExecutionHandler [202509151833138810001] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] 
+2025-09-15 18:33:13.923 -INFO- nablarch.core.log.app.BasicCommitLogger [202509151833138810001] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] TOTAL COMMIT COUNT = [0]
+2025-09-15 18:33:13.927 -FATAL- nablarch.core.log.app.FailureLogUtil [202509151833138810001] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] fail_code = [MSG99999] an unexpected exception occurred.
+Input Data :
+java.lang.Object@f7793a8
+Stack Trace Information : 
+java.lang.RuntimeException: CSV read failed: C:\nablarch\nablarch-batch-try\work\input\users.csv
+	at com.example.nablarch.batch.ImportUsersAction.handle(ImportUsersAction.java:74)
+	at nablarch.fw.action.NoInputDataBatchAction.handle(NoInputDataBatchAction.java:42)
+	at nablarch.fw.action.NoInputDataBatchAction.handle(NoInputDataBatchAction.java:26)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.DataReadHandler.handle(DataReadHandler.java:59)
+	at nablarch.fw.handler.DataReadHandler.handle(DataReadHandler.java:26)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.LoopHandler$TransactionExecutorImpl.doInTransaction(LoopHandler.java:296)
+	at nablarch.fw.handler.LoopHandler$TransactionExecutorImpl.doInTransaction(LoopHandler.java:245)
+	at nablarch.core.transaction.TransactionExecutor.execute(TransactionExecutor.java:46)
+	at nablarch.fw.handler.LoopHandler.handle(LoopHandler.java:68)
+	at nablarch.fw.handler.LoopHandler.handle(LoopHandler.java:38)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.common.handler.DbConnectionManagementHandler.handle(DbConnectionManagementHandler.java:86)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.MultiThreadExecutionHandler$1.call(MultiThreadExecutionHandler.java:334)
+	at nablarch.fw.handler.MultiThreadExecutionHandler$1.call(MultiThreadExecutionHandler.java:330)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.nio.charset.MalformedInputException: Input length = 1
+	at java.base/java.nio.charset.CoderResult.throwException(CoderResult.java:279)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:384)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:215)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:169)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at com.example.nablarch.batch.ImportUsersAction.handle(ImportUsersAction.java:49)
+	... 22 more
+2025-09-15 18:33:13.929 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ END @@@@ exit code = [20] execute time(ms) = [951]
+2025-09-15 18:43:09.095 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	WRITER NAME         = [writer.appFile]
+	WRITER CLASS        = [nablarch.core.log.basic.FileLogWriter]
+	FORMATTER CLASS     = [nablarch.core.log.basic.BasicLogFormatter]
+	LEVEL               = [null]
+	FILE PATH           = [./app.log]
+	ENCODING            = [UTF-8]
+	OUTPUT BUFFER SIZE  = [8000]
+	ROTATE POLICY CLASS = [nablarch.core.log.basic.FileSizeRotatePolicy]
+	FILE AUTO CHANGE    = [true]
+	MAX FILE SIZE       = [10000000]
+	CURRENT FILE SIZE   = [31843]
+2025-09-15 18:43:09.101 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	LOGGER = [DEV] NAME REGEX = [DEV] LEVEL = [INFO]
+	LOGGER = [PER] NAME REGEX = [PERFORMANCE] LEVEL = [INFO]
+	LOGGER = [SQL] NAME REGEX = [SQL] LEVEL = [INFO]
+	LOGGER = [ROO] NAME REGEX = [.*] LEVEL = [INFO]
+2025-09-15 18:43:09.109 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ BEGIN @@@@
+	command line options = {
+		userId = [dev]
+		requestPath = [ImportUsersAction]
+		diConfig = [classpath:import-users-boot.xml]
+	}
+	command line arguments = {
+	}
+2025-09-15 18:43:09.370 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = tableName
+2025-09-15 18:43:09.370 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = segmentColumnName
+2025-09-15 18:43:09.370 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = dateColumnName
+2025-09-15 18:43:09.370 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = defaultSegment
+2025-09-15 18:43:09.370 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = dbTransactionManager
+2025-09-15 18:43:09.451 -INFO- com.zaxxer.hikari.HikariDataSource [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] HikariPool-1 - Starting...
+2025-09-15 18:43:09.934 -INFO- com.zaxxer.hikari.HikariDataSource [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] HikariPool-1 - Start completed.
+2025-09-15 18:43:10.005 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ APPLICATION SETTINGS @@@@
+	system settings = {
+	}
+	business date = [20140123]
+2025-09-15 18:43:10.018 -INFO- com.example.nablarch.batch.ImportUsersAction [202509151843100180002] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] [ImportUsersAction] start
+2025-09-15 18:43:10.029 -WARN- nablarch.fw.handler.DataReadHandler [202509151843100180002] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] application was abnormal end.
+	input data = java.lang.Object@10b542ab
+Stack Trace Information : 
+java.lang.NumberFormatException: For input string: "id"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:661)
+	at java.base/java.lang.Integer.parseInt(Integer.java:777)
+	at com.example.nablarch.batch.ImportUsersAction.handle(ImportUsersAction.java:59)
+	at nablarch.fw.action.NoInputDataBatchAction.handle(NoInputDataBatchAction.java:42)
+	at nablarch.fw.action.NoInputDataBatchAction.handle(NoInputDataBatchAction.java:26)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.DataReadHandler.handle(DataReadHandler.java:59)
+	at nablarch.fw.handler.DataReadHandler.handle(DataReadHandler.java:26)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.LoopHandler$TransactionExecutorImpl.doInTransaction(LoopHandler.java:296)
+	at nablarch.fw.handler.LoopHandler$TransactionExecutorImpl.doInTransaction(LoopHandler.java:245)
+	at nablarch.core.transaction.TransactionExecutor.execute(TransactionExecutor.java:46)
+	at nablarch.fw.handler.LoopHandler.handle(LoopHandler.java:68)
+	at nablarch.fw.handler.LoopHandler.handle(LoopHandler.java:38)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.common.handler.DbConnectionManagementHandler.handle(DbConnectionManagementHandler.java:86)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.MultiThreadExecutionHandler$1.call(MultiThreadExecutionHandler.java:334)
+	at nablarch.fw.handler.MultiThreadExecutionHandler$1.call(MultiThreadExecutionHandler.java:330)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-09-15 18:43:10.045 -WARN- nablarch.core.log.app.FailureLogUtil [202509151843100100001] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] fail_code = [MSG99999] an unexpected exception occurred.
+Input Data :
+java.lang.Object@10b542ab
+Stack Trace Information : 
+java.util.concurrent.ExecutionException: java.lang.NumberFormatException: For input string: "id"
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at nablarch.fw.handler.MultiThreadExecutionHandler.reportThreadStatus(MultiThreadExecutionHandler.java:282)
+	at nablarch.fw.handler.MultiThreadExecutionHandler.terminate(MultiThreadExecutionHandler.java:262)
+	at nablarch.fw.handler.MultiThreadExecutionHandler.handle(MultiThreadExecutionHandler.java:128)
+	at nablarch.fw.handler.MultiThreadExecutionHandler.handle(MultiThreadExecutionHandler.java:41)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.DispatchHandler.handle(DispatchHandler.java:98)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.common.handler.TransactionManagementHandler$1.doInTransaction(TransactionManagementHandler.java:149)
+	at nablarch.core.transaction.TransactionExecutor.execute(TransactionExecutor.java:46)
+	at nablarch.common.handler.TransactionManagementHandler.handle(TransactionManagementHandler.java:174)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.common.handler.DbConnectionManagementHandler.handle(DbConnectionManagementHandler.java:86)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.common.handler.threadcontext.ThreadContextHandler.handle(ThreadContextHandler.java:80)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.GlobalErrorHandler.handle(GlobalErrorHandler.java:42)
+	at nablarch.fw.handler.GlobalErrorHandler.handle(GlobalErrorHandler.java:32)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.common.handler.threadcontext.ThreadContextClearHandler.handle(ThreadContextClearHandler.java:25)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.StatusCodeConvertHandler.handle(StatusCodeConvertHandler.java:83)
+	at nablarch.fw.handler.StatusCodeConvertHandler.handle(StatusCodeConvertHandler.java:73)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.launcher.Main.handle(Main.java:135)
+	at nablarch.fw.launcher.Main.execute(Main.java:187)
+	at nablarch.fw.launcher.Main.main(Main.java:112)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:371)
+	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:360)
+	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:280)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NumberFormatException: For input string: "id"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:661)
+	at java.base/java.lang.Integer.parseInt(Integer.java:777)
+	at com.example.nablarch.batch.ImportUsersAction.handle(ImportUsersAction.java:59)
+	at nablarch.fw.action.NoInputDataBatchAction.handle(NoInputDataBatchAction.java:42)
+	at nablarch.fw.action.NoInputDataBatchAction.handle(NoInputDataBatchAction.java:26)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.DataReadHandler.handle(DataReadHandler.java:59)
+	at nablarch.fw.handler.DataReadHandler.handle(DataReadHandler.java:26)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.LoopHandler$TransactionExecutorImpl.doInTransaction(LoopHandler.java:296)
+	at nablarch.fw.handler.LoopHandler$TransactionExecutorImpl.doInTransaction(LoopHandler.java:245)
+	at nablarch.core.transaction.TransactionExecutor.execute(TransactionExecutor.java:46)
+	at nablarch.fw.handler.LoopHandler.handle(LoopHandler.java:68)
+	at nablarch.fw.handler.LoopHandler.handle(LoopHandler.java:38)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.common.handler.DbConnectionManagementHandler.handle(DbConnectionManagementHandler.java:86)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.MultiThreadExecutionHandler$1.call(MultiThreadExecutionHandler.java:334)
+	at nablarch.fw.handler.MultiThreadExecutionHandler$1.call(MultiThreadExecutionHandler.java:330)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	... 1 more
+2025-09-15 18:43:10.049 -INFO- nablarch.fw.handler.MultiThreadExecutionHandler [202509151843100100001] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] 
+2025-09-15 18:43:10.056 -INFO- nablarch.core.log.app.BasicCommitLogger [202509151843100100001] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] TOTAL COMMIT COUNT = [0]
+2025-09-15 18:43:10.061 -FATAL- nablarch.core.log.app.FailureLogUtil [202509151843100100001] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] fail_code = [MSG99999] an unexpected exception occurred.
+Input Data :
+java.lang.Object@10b542ab
+Stack Trace Information : 
+java.lang.NumberFormatException: For input string: "id"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:661)
+	at java.base/java.lang.Integer.parseInt(Integer.java:777)
+	at com.example.nablarch.batch.ImportUsersAction.handle(ImportUsersAction.java:59)
+	at nablarch.fw.action.NoInputDataBatchAction.handle(NoInputDataBatchAction.java:42)
+	at nablarch.fw.action.NoInputDataBatchAction.handle(NoInputDataBatchAction.java:26)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.DataReadHandler.handle(DataReadHandler.java:59)
+	at nablarch.fw.handler.DataReadHandler.handle(DataReadHandler.java:26)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.LoopHandler$TransactionExecutorImpl.doInTransaction(LoopHandler.java:296)
+	at nablarch.fw.handler.LoopHandler$TransactionExecutorImpl.doInTransaction(LoopHandler.java:245)
+	at nablarch.core.transaction.TransactionExecutor.execute(TransactionExecutor.java:46)
+	at nablarch.fw.handler.LoopHandler.handle(LoopHandler.java:68)
+	at nablarch.fw.handler.LoopHandler.handle(LoopHandler.java:38)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.common.handler.DbConnectionManagementHandler.handle(DbConnectionManagementHandler.java:86)
+	at nablarch.fw.ExecutionContext.handleNext(ExecutionContext.java:95)
+	at nablarch.fw.handler.MultiThreadExecutionHandler$1.call(MultiThreadExecutionHandler.java:334)
+	at nablarch.fw.handler.MultiThreadExecutionHandler$1.call(MultiThreadExecutionHandler.java:330)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-09-15 18:43:10.065 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ END @@@@ exit code = [20] execute time(ms) = [954]
+2025-09-15 18:45:56.068 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	WRITER NAME         = [writer.appFile]
+	WRITER CLASS        = [nablarch.core.log.basic.FileLogWriter]
+	FORMATTER CLASS     = [nablarch.core.log.basic.BasicLogFormatter]
+	LEVEL               = [null]
+	FILE PATH           = [./app.log]
+	ENCODING            = [UTF-8]
+	OUTPUT BUFFER SIZE  = [8000]
+	ROTATE POLICY CLASS = [nablarch.core.log.basic.FileSizeRotatePolicy]
+	FILE AUTO CHANGE    = [true]
+	MAX FILE SIZE       = [10000000]
+	CURRENT FILE SIZE   = [45751]
+2025-09-15 18:45:56.082 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	LOGGER = [DEV] NAME REGEX = [DEV] LEVEL = [INFO]
+	LOGGER = [PER] NAME REGEX = [PERFORMANCE] LEVEL = [INFO]
+	LOGGER = [SQL] NAME REGEX = [SQL] LEVEL = [INFO]
+	LOGGER = [ROO] NAME REGEX = [.*] LEVEL = [INFO]
+2025-09-15 18:45:56.092 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ BEGIN @@@@
+	command line options = {
+		userId = [dev]
+		requestPath = [ImportUsersAction]
+		diConfig = [classpath:import-users-boot.xml]
+	}
+	command line arguments = {
+	}
+2025-09-15 18:45:56.337 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = tableName
+2025-09-15 18:45:56.337 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = segmentColumnName
+2025-09-15 18:45:56.337 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = dateColumnName
+2025-09-15 18:45:56.337 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = defaultSegment
+2025-09-15 18:45:56.337 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = dbTransactionManager
+2025-09-15 18:45:56.420 -INFO- com.zaxxer.hikari.HikariDataSource [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] HikariPool-1 - Starting...
+2025-09-15 18:45:56.890 -INFO- com.zaxxer.hikari.HikariDataSource [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] HikariPool-1 - Start completed.
+2025-09-15 18:45:56.956 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ APPLICATION SETTINGS @@@@
+	system settings = {
+	}
+	business date = [20140123]
+2025-09-15 18:45:56.969 -INFO- com.example.nablarch.batch.ImportUsersAction [202509151845569690002] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] [ImportUsersAction] start
+2025-09-15 18:45:56.994 -INFO- com.example.nablarch.batch.ImportUsersAction [202509151845569690002] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] [ImportUsersAction] inserted rows = 3
+2025-09-15 18:45:56.996 -INFO- com.example.nablarch.batch.ImportUsersAction [202509151845569690002] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] [ImportUsersAction] finish
+2025-09-15 18:45:57.004 -INFO- nablarch.fw.handler.MultiThreadExecutionHandler [202509151845569580001] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] 
+Thread Status: normal end.
+Thread Result:[200 Success] The request has succeeded.
+2025-09-15 18:45:57.008 -INFO- nablarch.core.log.app.BasicCommitLogger [202509151845569580001] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersAction] usr_id = [dev] TOTAL COMMIT COUNT = [1]
+2025-09-15 18:45:57.010 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ END @@@@ exit code = [0] execute time(ms) = [918]
