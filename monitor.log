@@ -1,0 +1,28 @@
+2025-09-14 19:53:49.465 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	WRITER NAME         = [writer.monitorFile]
+	WRITER CLASS        = [nablarch.core.log.basic.FileLogWriter]
+	FORMATTER CLASS     = [nablarch.core.log.basic.BasicLogFormatter]
+	LEVEL               = [null]
+	FILE PATH           = [./monitor.log]
+	ENCODING            = [UTF-8]
+	OUTPUT BUFFER SIZE  = [8000]
+	ROTATE POLICY CLASS = [nablarch.core.log.basic.FileSizeRotatePolicy]
+	FILE AUTO CHANGE    = [false]
+	MAX FILE SIZE       = [0]
+	CURRENT FILE SIZE   = [0]
+2025-09-14 19:53:49.465 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	LOGGER = [MON] NAME REGEX = [MONITOR] LEVEL = [ERROR]
+2025-09-14 19:57:15.392 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	WRITER NAME         = [writer.monitorFile]
+	WRITER CLASS        = [nablarch.core.log.basic.FileLogWriter]
+	FORMATTER CLASS     = [nablarch.core.log.basic.BasicLogFormatter]
+	LEVEL               = [null]
+	FILE PATH           = [./monitor.log]
+	ENCODING            = [UTF-8]
+	OUTPUT BUFFER SIZE  = [8000]
+	ROTATE POLICY CLASS = [nablarch.core.log.basic.FileSizeRotatePolicy]
+	FILE AUTO CHANGE    = [false]
+	MAX FILE SIZE       = [0]
+	CURRENT FILE SIZE   = [772]
+2025-09-14 19:57:15.395 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	LOGGER = [MON] NAME REGEX = [MONITOR] LEVEL = [ERROR]

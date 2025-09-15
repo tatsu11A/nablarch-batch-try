@@ -1,0 +1,86 @@
+2025-09-14 19:53:49.465 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	WRITER NAME         = [writer.appFile]
+	WRITER CLASS        = [nablarch.core.log.basic.FileLogWriter]
+	FORMATTER CLASS     = [nablarch.core.log.basic.BasicLogFormatter]
+	LEVEL               = [null]
+	FILE PATH           = [./app.log]
+	ENCODING            = [UTF-8]
+	OUTPUT BUFFER SIZE  = [8000]
+	ROTATE POLICY CLASS = [nablarch.core.log.basic.FileSizeRotatePolicy]
+	FILE AUTO CHANGE    = [true]
+	MAX FILE SIZE       = [10000000]
+	CURRENT FILE SIZE   = [0]
+2025-09-14 19:53:49.465 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	LOGGER = [DEV] NAME REGEX = [DEV] LEVEL = [INFO]
+	LOGGER = [PER] NAME REGEX = [PERFORMANCE] LEVEL = [INFO]
+	LOGGER = [SQL] NAME REGEX = [SQL] LEVEL = [INFO]
+	LOGGER = [ROO] NAME REGEX = [.*] LEVEL = [INFO]
+2025-09-14 19:53:49.481 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ BEGIN @@@@
+	command line options = {
+		userId = [dev]
+		requestPath = [SampleBatch]
+		diConfig = [classpath:batch-boot.xml]
+	}
+	command line arguments = {
+	}
+2025-09-14 19:53:49.639 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = tableName
+2025-09-14 19:53:49.639 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = segmentColumnName
+2025-09-14 19:53:49.639 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = dateColumnName
+2025-09-14 19:53:49.639 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = defaultSegment
+2025-09-14 19:53:49.639 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = dbTransactionManager
+2025-09-14 19:53:49.671 -INFO- com.zaxxer.hikari.HikariDataSource [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] HikariPool-1 - Starting...
+2025-09-14 19:53:49.925 -INFO- com.zaxxer.hikari.HikariDataSource [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] HikariPool-1 - Start completed.
+2025-09-14 19:53:49.963 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ APPLICATION SETTINGS @@@@
+	system settings = {
+	}
+	business date = [20140123]
+2025-09-14 19:53:49.973 -INFO- com.example.nablarch.batch.SampleBatch [202509141953499730002] boot_proc = [] proc_sys = [batch] req_id = [SampleBatch] usr_id = [dev] 疎通確認を開始します。
+2025-09-14 19:53:50.006 -INFO- com.example.nablarch.batch.SampleBatch [202509141953499730002] boot_proc = [] proc_sys = [batch] req_id = [SampleBatch] usr_id = [dev] 取得したコード名称：ロック
+2025-09-14 19:53:50.006 -INFO- com.example.nablarch.batch.SampleBatch [202509141953499730002] boot_proc = [] proc_sys = [batch] req_id = [SampleBatch] usr_id = [dev] 疎通確認が完了しました。
+2025-09-14 19:53:50.020 -INFO- nablarch.fw.handler.MultiThreadExecutionHandler [202509141953499630001] boot_proc = [] proc_sys = [batch] req_id = [SampleBatch] usr_id = [dev] 
+Thread Status: normal end.
+Thread Result:[200 Success] The request has succeeded.
+2025-09-14 19:53:50.020 -INFO- nablarch.core.log.app.BasicCommitLogger [202509141953499630001] boot_proc = [] proc_sys = [batch] req_id = [SampleBatch] usr_id = [dev] TOTAL COMMIT COUNT = [1]
+2025-09-14 19:53:50.020 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ END @@@@ exit code = [0] execute time(ms) = [539]
+2025-09-14 19:57:15.395 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	WRITER NAME         = [writer.appFile]
+	WRITER CLASS        = [nablarch.core.log.basic.FileLogWriter]
+	FORMATTER CLASS     = [nablarch.core.log.basic.BasicLogFormatter]
+	LEVEL               = [null]
+	FILE PATH           = [./app.log]
+	ENCODING            = [UTF-8]
+	OUTPUT BUFFER SIZE  = [8000]
+	ROTATE POLICY CLASS = [nablarch.core.log.basic.FileSizeRotatePolicy]
+	FILE AUTO CHANGE    = [true]
+	MAX FILE SIZE       = [10000000]
+	CURRENT FILE SIZE   = [4400]
+2025-09-14 19:57:15.395 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	LOGGER = [DEV] NAME REGEX = [DEV] LEVEL = [INFO]
+	LOGGER = [PER] NAME REGEX = [PERFORMANCE] LEVEL = [INFO]
+	LOGGER = [SQL] NAME REGEX = [SQL] LEVEL = [INFO]
+	LOGGER = [ROO] NAME REGEX = [.*] LEVEL = [INFO]
+2025-09-14 19:57:15.405 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ BEGIN @@@@
+	command line options = {
+		userId = [dev]
+		requestPath = [SampleResiBatch]
+		diConfig = [classpath:resident-batch-boot.xml]
+	}
+	command line arguments = {
+	}
+2025-09-14 19:57:15.562 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = tableName
+2025-09-14 19:57:15.562 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = segmentColumnName
+2025-09-14 19:57:15.562 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = dateColumnName
+2025-09-14 19:57:15.562 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = defaultSegment
+2025-09-14 19:57:15.562 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = dbTransactionManager
+2025-09-14 19:57:15.612 -INFO- com.zaxxer.hikari.HikariDataSource [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] HikariPool-1 - Starting...
+2025-09-14 19:57:15.847 -INFO- com.zaxxer.hikari.HikariDataSource [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] HikariPool-1 - Start completed.
+2025-09-14 19:57:15.880 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ APPLICATION SETTINGS @@@@
+	system settings = {
+	}
+	business date = [20140123]
+2025-09-14 19:57:15.894 -INFO- nablarch.fw.reader.DatabaseTableQueueReader [202509141957158800001] boot_proc = [] proc_sys = [batch] req_id = [SampleResiBatch] usr_id = [dev] read database record. key info: {USER_INFO_ID=00000000000000000001}
+2025-09-14 19:57:15.894 -INFO- com.example.nablarch.batch.SampleResiBatch [202509141957158940002] boot_proc = [] proc_sys = [batch] req_id = [SampleResiBatch] usr_id = [dev] handleが呼ばれました。
+2025-09-14 19:57:15.894 -INFO- com.example.nablarch.batch.SampleResiBatch [202509141957158940002] boot_proc = [] proc_sys = [batch] req_id = [SampleResiBatch] usr_id = [dev] USER_INFO_ID:00000000000000000001
+2025-09-14 19:57:15.894 -INFO- com.example.nablarch.batch.SampleResiBatch [202509141957158940002] boot_proc = [] proc_sys = [batch] req_id = [SampleResiBatch] usr_id = [dev] LOGIN_ID:tarou
+2025-09-14 19:57:15.894 -INFO- com.example.nablarch.batch.SampleResiBatch [202509141957158940002] boot_proc = [] proc_sys = [batch] req_id = [SampleResiBatch] usr_id = [dev] KANA_NAME:たろう
+2025-09-14 19:57:15.894 -INFO- com.example.nablarch.batch.SampleResiBatch [202509141957158940002] boot_proc = [] proc_sys = [batch] req_id = [SampleResiBatch] usr_id = [dev] KANJI_NAME:太郎
