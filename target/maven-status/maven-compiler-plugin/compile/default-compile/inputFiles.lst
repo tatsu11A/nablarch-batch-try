@@ -3,6 +3,10 @@ C:\nablarch\nablarch-batch-try\src\main\java\com\example\nablarch\batch\domain\S
 C:\nablarch\nablarch-batch-try\src\main\java\com\example\nablarch\batch\domain\SampleDomainManager.java
 C:\nablarch\nablarch-batch-try\src\main\java\com\example\nablarch\batch\HelloAction.java
 C:\nablarch\nablarch-batch-try\src\main\java\com\example\nablarch\batch\ImportUsersAction.java
+C:\nablarch\nablarch-batch-try\src\main\java\com\example\nablarch\batch\ImportUsersCsvAction.java
+C:\nablarch\nablarch-batch-try\src\main\java\com\example\nablarch\batch\InitSchemaAction.java
+C:\nablarch\nablarch-batch-try\src\main\java\com\example\nablarch\batch\model\UserRow.java
 C:\nablarch\nablarch-batch-try\src\main\java\com\example\nablarch\batch\package-info.java
+C:\nablarch\nablarch-batch-try\src\main\java\com\example\nablarch\batch\reader\UsersCsvReader.java
 C:\nablarch\nablarch-batch-try\src\main\java\com\example\nablarch\batch\SampleBatch.java
 C:\nablarch\nablarch-batch-try\src\main\java\com\example\nablarch\batch\SampleResiBatch.java
