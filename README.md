@@ -49,3 +49,52 @@ package: com.example.nablarch.batch
  # ビルド
 mvn clean package -DskipTests
 → エラーがなければ成功。
+
+nablarch-batch-try/
+├── db/
+│   └── （DDLや初期データを置く）
+├── h2/
+│   └── （組み込みDB H2 の設定ファイル置き場）
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/nablarch/example/batch/
+│   │   │       ├── HelloAction.java
+│   │   │       ├── NoInput.java
+│   │   │       └── （今後追加予定: chunk配下にReader/Processor/Writer）
+│   │   └── resources/
+│   │       ├── batch-boot.xml
+│   │       ├── log.properties
+│   │       └── （ジョブ設定XMLを配置予定）
+│   └── test/
+│       └── （単体テストクラスを配置する場所）
+├── tools/
+│   └── static-analysis/
+│       └── spotbugs/
+│           └── （静的解析設定ファイル）
+├── work/
+│   ├── input/
+│   ├── output/
+│   └── （入出力ファイルを置く場所）
+├── pom.xml
+├── distribution.xml
+├── app.log
+└── monitor.log
+
+| フォルダ／ファイル                           | 役割                                                                          
+| ----------------------------------- | ----------------------------------------------------------------------------- |
+| **db/**                             | テーブル定義や初期データ（DDL／INSERT文）を配置。                                                 
+| **h2/**                             | 組み込みデータベース H2 の接続設定置き場。                                                       
+| **src/main/java/**                  | バッチ本体の Java コード。                                                              
+| ┗ **HelloAction.java**             | archetype生成時のサンプルジョブ。`Action<ExecutionContext>`を実装。ログに "Hello" を出力するだけの最小バッチ。 
+| ┗ **NoInput.java**                 | 入力を取らない固定ジョブの例。                                                               
+| **src/main/resources/**             | 各種設定ファイルを格納。                                                                  
+| ┗ **batch-boot.xml**               | ハンドラー構成（共通処理フロー）を定義。                                                          
+| ┗ **log.properties**               | ログ出力設定（app.log／monitor.log）。                                                  
+| ┗ **（ジョブ設定XML）**            | 今後追加予定。chunk構成ジョブのReader/Writerなどを定義。                                         
+| **distribution.xml**                | バッチIDと実行クラスの対応定義。`HelloAction` などを登録。                                         
+| **work/**                           | CSVなどの入出力ファイルを置くディレクトリ。                                                       
+| **tools/static-analysis/spotbugs/** | SpotBugsによる静的解析設定。                                                            
+| **pom.xml**                         | Mavenビルド設定（依存ライブラリ・プラグインなど）。                                                  
+| **app.log / monitor.log**           | 実行ログ（アプリ用／監視用）。                                                               
+

@@ -752,3 +752,47 @@ Thread Status: normal end.
 Thread Result:[200 Success] The request has succeeded.
 2025-09-16 17:13:51.042 -INFO- nablarch.core.log.app.BasicCommitLogger [202509161713510110001] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersCsvAction] usr_id = [dev] TOTAL COMMIT COUNT = [3]
 2025-09-16 17:13:51.044 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ END @@@@ exit code = [0] execute time(ms) = [479]
+2025-09-19 10:38:46.556 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	WRITER NAME         = [writer.appFile]
+	WRITER CLASS        = [nablarch.core.log.basic.FileLogWriter]
+	FORMATTER CLASS     = [nablarch.core.log.basic.BasicLogFormatter]
+	LEVEL               = [null]
+	FILE PATH           = [./app.log]
+	ENCODING            = [UTF-8]
+	OUTPUT BUFFER SIZE  = [8000]
+	ROTATE POLICY CLASS = [nablarch.core.log.basic.FileSizeRotatePolicy]
+	FILE AUTO CHANGE    = [true]
+	MAX FILE SIZE       = [10000000]
+	CURRENT FILE SIZE   = [67897]
+2025-09-19 10:38:46.558 -INFO- null [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] initialized.
+	LOGGER = [DEV] NAME REGEX = [DEV] LEVEL = [INFO]
+	LOGGER = [PER] NAME REGEX = [PERFORMANCE] LEVEL = [INFO]
+	LOGGER = [SQL] NAME REGEX = [SQL] LEVEL = [INFO]
+	LOGGER = [ROO] NAME REGEX = [.*] LEVEL = [INFO]
+2025-09-19 10:38:46.565 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ BEGIN @@@@
+	command line options = {
+		userId = [dev]
+		requestPath = [ImportUsersCsvAction]
+		diConfig = [classpath:import-users-csv-boot.xml]
+	}
+	command line arguments = {
+	}
+2025-09-19 10:38:46.727 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = tableName
+2025-09-19 10:38:46.729 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = segmentColumnName
+2025-09-19 10:38:46.729 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = dateColumnName
+2025-09-19 10:38:46.730 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = defaultSegment
+2025-09-19 10:38:46.730 -WARN- nablarch.core.repository.di.config.xml.XmlComponentDefinitionLoader [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] component property was overridden. component name = businessDateProvider, property = dbTransactionManager
+2025-09-19 10:38:46.770 -INFO- com.zaxxer.hikari.HikariDataSource [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] HikariPool-1 - Starting...
+2025-09-19 10:38:47.007 -INFO- com.zaxxer.hikari.HikariDataSource [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] HikariPool-1 - Start completed.
+2025-09-19 10:38:47.046 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ APPLICATION SETTINGS @@@@
+	system settings = {
+	}
+	business date = [20140123]
+2025-09-19 10:38:47.071 -INFO- com.example.nablarch.batch.ImportUsersCsvAction [202509191038470640002] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersCsvAction] usr_id = [dev] upsert id=1
+2025-09-19 10:38:47.073 -INFO- com.example.nablarch.batch.ImportUsersCsvAction [202509191038470720003] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersCsvAction] usr_id = [dev] upsert id=2
+2025-09-19 10:38:47.074 -INFO- com.example.nablarch.batch.ImportUsersCsvAction [202509191038470740004] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersCsvAction] usr_id = [dev] upsert id=3
+2025-09-19 10:38:47.078 -INFO- nablarch.fw.handler.MultiThreadExecutionHandler [202509191038470480001] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersCsvAction] usr_id = [dev] 
+Thread Status: normal end.
+Thread Result:[200 Success] The request has succeeded.
+2025-09-19 10:38:47.079 -INFO- nablarch.core.log.app.BasicCommitLogger [202509191038470480001] boot_proc = [] proc_sys = [batch] req_id = [ImportUsersCsvAction] usr_id = [dev] TOTAL COMMIT COUNT = [3]
+2025-09-19 10:38:47.080 -INFO- nablarch.fw.launcher.Main [null] boot_proc = [] proc_sys = [batch] req_id = [null] usr_id = [null] @@@@ END @@@@ exit code = [0] execute time(ms) = [515]
