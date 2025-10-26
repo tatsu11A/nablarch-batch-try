@@ -50,51 +50,80 @@ package: com.example.nablarch.batch
 mvn clean package -DskipTests
 → エラーがなければ成功。
 
+
 nablarch-batch-try/
-├── db/
-│   └── （DDLや初期データを置く）
-├── h2/
-│   └── （組み込みDB H2 の設定ファイル置き場）
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/nablarch/example/batch/
-│   │   │       ├── HelloAction.java
-│   │   │       ├── NoInput.java
-│   │   │       └── （今後追加予定: chunk配下にReader/Processor/Writer）
-│   │   └── resources/
-│   │       ├── batch-boot.xml
-│   │       ├── log.properties
-│   │       └── （ジョブ設定XMLを配置予定）
-│   └── test/
-│       └── （単体テストクラスを配置する場所）
-├── tools/
-│   └── static-analysis/
-│       └── spotbugs/
-│           └── （静的解析設定ファイル）
-├── work/
-│   ├── input/
-│   ├── output/
-│   └── （入出力ファイルを置く場所）
-├── pom.xml
-├── distribution.xml
-├── app.log
-└── monitor.log
+├─ pom.xml
+├─ README.md
+├─ work/
+│  ├─ input/
+│  │  └─ users.csv              ← 取込CSV（UTF-8 / ヘッダ: id,name,email）
+│  └─ output/                   ← 出力先（将来のExportで使用）
+└─ src/
+   ├─ main/
+   │  ├─ java/com/example/nablarch/batch/
+   │  │  ├─ HelloAction.java                ← NoInput（疎通）
+   │  │  ├─ ImportUsersAction.java          ← 最小実装：CSV→DB（1クラス完結）
+   │  │  ├─ ImportUsersCsvAction.java       ← 標準形：BatchAction<UserRow>
+   │  │  ├─ reader/UsersCsvReader.java      ← 標準形：DataReader<UserRow>
+   │  │  └─ domain/SampleDomainManager.java ← ドメイン定義の雛形
+   │  └─ resources/
+   │     ├─ batch-boot.xml                  ← 雛形起動設定
+   │     ├─ batch-component-configuration.xml← 共通ハンドラ構成（DI）
+   │     ├─ data-source.xml                 ← DB接続設定（H2など）
+   │     ├─ import-users-boot.xml           ← 最小実装の起動設定
+   │     └─ import-users-csv-boot.xml       ← 標準形の起動設定
+   └─ test/ ...
 
-| フォルダ／ファイル                           | 役割                                                                          
-| ----------------------------------- | ----------------------------------------------------------------------------- |
-| **db/**                             | テーブル定義や初期データ（DDL／INSERT文）を配置。                                                 
-| **h2/**                             | 組み込みデータベース H2 の接続設定置き場。                                                       
-| **src/main/java/**                  | バッチ本体の Java コード。                                                              
-| ┗ **HelloAction.java**             | archetype生成時のサンプルジョブ。`Action<ExecutionContext>`を実装。ログに "Hello" を出力するだけの最小バッチ。 
-| ┗ **NoInput.java**                 | 入力を取らない固定ジョブの例。                                                               
-| **src/main/resources/**             | 各種設定ファイルを格納。                                                                  
-| ┗ **batch-boot.xml**               | ハンドラー構成（共通処理フロー）を定義。                                                          
-| ┗ **log.properties**               | ログ出力設定（app.log／monitor.log）。                                                  
-| ┗ **（ジョブ設定XML）**            | 今後追加予定。chunk構成ジョブのReader/Writerなどを定義。                                         
-| **distribution.xml**                | バッチIDと実行クラスの対応定義。`HelloAction` などを登録。                                         
-| **work/**                           | CSVなどの入出力ファイルを置くディレクトリ。                                                       
-| **tools/static-analysis/spotbugs/** | SpotBugsによる静的解析設定。                                                            
-| **pom.xml**                         | Mavenビルド設定（依存ライブラリ・プラグインなど）。                                                  
-| **app.log / monitor.log**           | 実行ログ（アプリ用／監視用）。                                                               
+実行手順
+0) 事前準備
 
+work/input/users.csv を配置（UTF-8）
+
+id,name,email
+1,Alice,alice@example.com
+2,Bob,bob@example.com
+3,Carol,carol@example.com
+
+1) ビルド
+mvn -q clean package -DskipTests
+
+
+→ BUILD SUCCESS になればOK。
+
+
+2) 実行：最小実装（ImportUsersAction）
+
+CSV読み～DB upsert を1クラスで実施。
+（文字コードを変える場合は -Dcharset=MS932 などに変更）
+
+mvn exec:java ^
+  -Dexec.mainClass=nablarch.fw.launcher.Main ^
+  -Dexec.args="-requestPath ImportUsersAction -diConfig classpath:import-users-boot.xml -userId dev" ^
+  -Dinput="work/input/users.csv" ^
+  -Dcharset=UTF-8
+
+
+期待ログ（抜粋）：
+
+upsert id=1
+upsert id=2
+upsert id=3
+[ImportUsersAction] finish: inserted/updated=3
+exit code = [0]
+
+3) 実行：標準形（ImportUsersCsvAction）
+
+Reader 分離 + 1件処理（Nablarch標準形）。
+
+mvn exec:java ^
+  -Dexec.mainClass=nablarch.fw.launcher.Main ^
+  -Dexec.args="-requestPath ImportUsersCsvAction -diConfig classpath:import-users-csv-boot.xml -userId dev"
+
+
+期待ログ（抜粋）：
+
+upsert id=1
+upsert id=2
+upsert id=3
+TOTAL COMMIT COUNT = [3]
+exit code = [0]
