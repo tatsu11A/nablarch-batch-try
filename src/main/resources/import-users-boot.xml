@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component-configuration
-    xmlns="http://tis.co.jp/nablarch/component-configuration"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://tis.co.jp/nablarch/component-configuration https://nablarch.github.io/schema/component-configuration.xsd">
+<!-- Nablarch の DIコンテナ（オブジェクト管理設定）を行うファイル -->
 
-  <!-- 共通DIを取込み -->
+<component-configuration
+    xmlns="http://tis.co.jp/nablarch/component-configuration"              <!-- Nablarch専用のXML名前空間 -->
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"                  <!-- XMLの型チェック用の標準名前空間 -->
+    xsi:schemaLocation="http://tis.co.jp/nablarch/component-configuration 
+                        https://nablarch.github.io/schema/component-configuration.xsd"> <!-- スキーマ定義の場所 -->
+
+  <!-- ▼ ここで共通設定（DB接続, ログ設定など）が書いてあるファイルを読み込む -->
+  <!--    batch-component-configuration.xml には、基本的なハンドラーやトランザクション設定などが定義されている -->
   <import file="batch-component-configuration.xml"/>
 
-  <!-- 今回実行するアクションだけ差し込む -->
+  <!-- ▼ このバッチで実行したいアクション（Javaクラス）を指定する -->
+  <!--    ※ "action" という名前でDIコンテナに登録され、Nablarchランチャーから呼び出される -->
+  <!--    ※ class に指定されたクラスが handle() を実行するバッチ処理本体 -->
   <component name="action" class="com.example.nablarch.batch.ImportUsersAction"/>
 </component-configuration>
